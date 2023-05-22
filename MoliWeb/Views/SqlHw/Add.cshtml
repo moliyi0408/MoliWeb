@@ -7,21 +7,22 @@
 
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Add</title>
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<title>Add</title>
 </head>
 <body>
 	
 	<div>
-		<form method="post" action="/SqlHw/reply">
+		<form method="post" action="/SqlHw/Add">
 			<table>
 				<tr>
 					<td>你的名字: </td>
-					<td><input type ="text" name="username"/></td>
+					<td><input type ="text" id="inputname" name="UserName"/></td>
 				</tr>
 				<tr>
 					<td>年齡: </td>
-					<td><input type ="text" name="age"/></td>
+					<td><input type ="text" id="inputage" name="Age"/></td>
 				</tr>
 				<tr>
 					<td colspan="2"><input type="submit" value="註冊用戶" /></td>

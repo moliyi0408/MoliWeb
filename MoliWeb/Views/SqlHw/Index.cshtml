@@ -1,17 +1,44 @@
-﻿
+﻿@using MoliWeb.Models;
 @{
-    Layout = null;
+	Layout = null;
+	List<Userinfo> userinfos = ViewBag.userinfos;
 }
 
 <!DOCTYPE html>
 
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
+	<meta name="viewport" content="width=device-width" />
+	<title>展示頁面</title>
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
-    <div> 
-    </div>
+	<div>
+		<table class="table"> 
+			<thead class="thead-dark">
+				<tr>
+					<th scope="col">編號</th>
+					<th scope="col">姓名</th>
+					<th scope="col">年齡</th>
+				</tr>
+			</thead>
+			<tbody>
+				@{ 
+					foreach(Userinfo userinfo in userinfos)
+					{
+						<tr>
+							<th scope="row">@userinfo.Id</th>
+							<th scope="row">@userinfo.UserName</th>
+							<th scope="row">@userinfo.Age</th>
+						</tr>
+					}
+				}
+			</tbody>
+		</table>
+	</div>
+
+	<p>
+		
+	</p>
 </body>
 </html>
