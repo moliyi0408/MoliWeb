@@ -15,14 +15,14 @@ namespace MoliWeb.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "描述關於自己的地方.";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "其他.";
 
             return View();
         }
