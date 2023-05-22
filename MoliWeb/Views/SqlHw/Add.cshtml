@@ -1,7 +1,9 @@
 ﻿
 @{
-    Layout = null;
+	//Layout = null;
+
 }
+<h2> MVC小測驗 </h2>
 
 <!DOCTYPE html>
 
@@ -12,17 +14,17 @@
 	<title>Add</title>
 </head>
 <body>
-	
+
 	<div>
 		<form method="post" action="/SqlHw/Add">
 			<table>
 				<tr>
 					<td>你的名字: </td>
-					<td><input type ="text" id="inputname" name="UserName"/></td>
+					<td><input type="text" id="inputname" name="UserName" /></td>
 				</tr>
 				<tr>
 					<td>年齡: </td>
-					<td><input type ="text" id="inputage" name="Age"/></td>
+					<td><input type="text" id="inputage" name="Age" /></td>
 				</tr>
 				<tr>
 					<td colspan="2"><input type="submit" value="註冊用戶" /></td>
@@ -30,6 +32,8 @@
 			</table>
 		</form>
 	</div>
-
+	<div>	
+		<a class="btn btn-default" href="/SqlHw/Index">mvc實作-資料顯示 &raquo;</a>
+	</div>
 </body>
 </html>
