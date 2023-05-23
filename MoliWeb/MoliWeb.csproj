@@ -183,8 +183,13 @@
     <Content Include="Views\Project\AccountApp.cshtml" />
     <Content Include="Views\Project\Insurance.cshtml" />
     <Content Include="Views\Project\InterActWeb.cshtml" />
+    <Content Include="Views\Project\UnityGame.cshtml" />
+    <Content Include="Views\Project\SqlProject.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Content\Documents\" />
+    <Folder Include="Content\Images\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
