@@ -180,6 +180,9 @@
     <Content Include="Views\SqlHw\Index.cshtml" />
     <Content Include="Views\SqlHw\Add.cshtml" />
     <Content Include="Views\Project\Pygame.cshtml" />
+    <Content Include="Views\Project\AccountApp.cshtml" />
+    <Content Include="Views\Project\Insurance.cshtml" />
+    <Content Include="Views\Project\InterActWeb.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

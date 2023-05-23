@@ -10,8 +10,9 @@
 	@Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
+	@*class="navbar"：樣式化導航欄元素、class="navbar-inverse"：創建黑色的導航欄，具有反白的顏色效果、class="navbar-fixed-top"：指定了 CSS 類別為 "navbar-fixed-top"固定導航欄在網頁的頂部，即使頁面滾動也不會消失。*@
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 					<span class="icon-bar"></span>
@@ -21,26 +22,26 @@
 				</button>
 				@Html.ActionLink("Moli的網站", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
 			</div>
-            <div class="navbar-collapse collapse">
+			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
 					<li>@Html.ActionLink("首頁", "Index", "Home")</li>
 					<li>@Html.ActionLink("關於我", "About", "Home")</li>
-					<li>@Html.ActionLink("其他", "Contact", "Home")</li>
+					@*<li>@Html.ActionLink("其他", "Contact", "Home")</li>*@
 					<li>@Html.ActionLink("練習", "Add", "SqlHw")</li>
 				</ul>
-            </div>
-        </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Moli的網站</p>
-        </footer>
-    </div>
+			</div>
+		</div>
+	</div>
+	<div class="container body-content">
+		@RenderBody()
+		<hr />
+		<footer>
+			<p>&copy; @DateTime.Now.Year - Moli的網站</p>
+		</footer>
+	</div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+	@Scripts.Render("~/bundles/jquery")
+	@Scripts.Render("~/bundles/bootstrap")
+	@RenderSection("scripts", required: false)
 </body>
 </html>

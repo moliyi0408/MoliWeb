@@ -12,6 +12,28 @@ namespace MoliWeb.Controllers
         public ActionResult Pygame()
         {
             return View();
+            
+        }
+
+        public ActionResult AccountApp()
+        {
+            return View();
+        }
+        public ActionResult Insurance()
+        {
+            return View();
+        }
+        public ActionResult InterActWeb()
+        {
+            return View();
+        }
+        public ActionResult UnityGame()
+        {
+            return View();
+        }
+        public ActionResult SqlProject()
+        {
+            return View();
         }
     }
 }
